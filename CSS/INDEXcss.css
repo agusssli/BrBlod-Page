@@ -1,0 +1,50 @@
+body{
+    background:url(../IMG/fondo.jpg)
+}    
+.titulo{
+    background-color: black;
+    color: white;
+    margin: 2%;
+    text-align: center;   
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+.parrafo1{
+    position: relative;
+    top: 100px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+.container-fluid-foot {
+    overflow: hidden;
+    margin-top: 65px;
+    background: #262626;
+    color: #627482 ;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.marg {
+    margin: 2%;
+}
+
+.textfoot{
+    position: relative;
+    text-align: right;
+    color: #4e4e4e;
+    margin: 2%;
+    padding: auto;
+}
+
+.cp{
+    position:relative;
+    top: 30px;
+    text-align: center;
+    color: #4e4e4e;
+    margin: 2%;
+    padding: auto;
+}
