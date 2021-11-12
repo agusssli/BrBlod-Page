@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BroBLOD/Contacto</title>
+    <link rel="stylesheet" href="CSS/indexcss.css">
+    <link rel="stylesheet" href="css-boots/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">CONTACTO</h1>
+  </header>
+  <nav>
+    <ul class="nav justify-content-center">
+      </li class="nav-item">
+        <a class="nav-link text-white bg-dark" aria-current="page" href="index.html" >Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white bg-dark" href="travesia.html">TRaveSias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white bg-dark" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <form id="form_contac" class="needs-validation" method="POST" action="php/registro.php" onsubmit="validate_email()" novalidate >
+
+    <div class="container m-5">
+
+      <div class="col-md mt-3">
+        <input type="text" class="form-control" maxlength="45" id="asunto" name="asunto" placeholder="Asunto" required>
+        <div class="invalid-feedback">
+          Escribe el asunto.
+        </div>
+      </div>
+      <div class="col-md mt-3">
+        <input type="text" class="form-control" maxlenght="45" name="email" id="email" name="email" placeholder="Email" required>
+        <div class="invalid-feedback">
+          Escribe un Email.
+        </div>
+      </div>
+      <div class="col-md mt-3">
+        <input type="text" class="form-control" maxlenght="45" id="reemail" name="reemail" placeholder="Reingreser Email" required>
+        <div class="invalid-feedback">
+          Escribe un Email.
+        </div>
+      </div>
+      <div class="col-md mt-3">
+        <textarea class="form-control" maxlength="250" id="texto" name="texto" placeholder="Texto" required></textarea>
+        <div class="invalid-feedback">
+          Llenar campo.
+        </div>
+      </div>
+     
+      <div class="col-12 mt-4">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+
+    </div>
+    
+  </form>
+  
+  
+  
+  
+  <script>
+
+    (function () {
+      'use strict'
+      var forms = document.querySelectorAll('.needs-validation')
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+         Event.form.addtListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+
+
+ <!--
+ <script>
+    function validate_email()
+    {alert("ejecutando la funcion")
+    }
+    var email = document.forms["form_contac"]["email"].value;
+    var reemail = document.forms["form_contac"]["reemail"].value;
+    alert(email);
+      if (email == reemail)
+        {alert("son iguales")}
+      else
+        {alert("distinto")}
+      {}
+  </script>
+  -->
+  
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
